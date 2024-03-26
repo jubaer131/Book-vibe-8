@@ -1,0 +1,98 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/HPfGhsb/30058164713.jpg",
+        "review": "A compelling story of love and tragedy set in the Roaring Twenties.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Classic",
+        "tags": [
+            "Romance",
+            "Drama"
+        ],
+        "publisher": "Scribner",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 2,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/CJcJQCT/9780822012825-us.jpg",
+        "review": "A timeless tale of racial injustice and moral growth in the American South.",
+        "totalPages": 281,
+        "rating": 4.8,
+        "category": "Classic",
+        "tags": [
+            "Social Justice",
+            "Coming of Age"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/4SdRBRW/31307611915.jpg",
+        "review": "A provocative exploration of teenage angst and rebellion.",
+        "totalPages": 224,
+        "rating": 4.2,
+        "category": "Classic",
+        "tags": [
+            "Youth",
+            "Alienation"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 4,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/LCHhLQW/nik-z1d-LP8sju-I-unsplash.jpg",
+        "review": "A chilling dystopian novel that explores the consequences of totalitarianism.",
+        "totalPages": 328,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": [
+            "Dystopia",
+            "Political"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 5,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/1R07xpL/31577729114.jpg",
+        "review": "A witty and romantic comedy of manners set in early 19th-century England.",
+        "totalPages": 432,
+        "rating": 4.7,
+        "category": "Classic",
+        "tags": [
+            "Romance",
+            "Social Commentary"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 6,
+        "bookName": "Your Heart",
+        "author": "J.R.R. Tolkien",
+        "image": "https://i.ibb.co/mh5hMBK/thought-catalog-B1d-QCWz0-U2w-unsplash-1.jpg",
+        "review": "An enchanting adventure that introduces readers to the world of Middle-earth.",
+        "totalPages": 310,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": [
+            "Adventure",
+            "Epic"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    }
+]
