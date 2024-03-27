@@ -1,4 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { savedataForWishlist, savedataToLocalStorage } from "../assets/Component/Localstorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 
 const BookDetails = () => {
@@ -7,8 +12,21 @@ const BookDetails = () => {
     const idint = parseInt(bookId)
 
     const book = Books.find(book => book.bookId === idint)
-    console.log(book)
+
     const { author, bookName, review, tags, totalPages, category, publisher, rating, yearOfPublishing, image } = book
+
+
+
+
+    const handleReadBook = () => {
+
+        savedataToLocalStorage(book)
+    }
+    const saveWishlist = () => {
+        savedataForWishlist(book)
+    }
+
+
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl gap-6 px-8 mt-20">
             <div className="lg:w-6/12 ">
@@ -47,14 +65,15 @@ const BookDetails = () => {
                             <p>Year of publishing : {yearOfPublishing}</p>
                             <p>Rating :{rating}</p>
                             <div className="space-x-5">
-                                <button className="btn">Read </button>
-                                <button className="btn text-green-400">Wishlist</button>
+                                <button onClick={handleReadBook} className="btn">Read </button>
+                                <button onClick={saveWishlist} className="btn text-green-400">Wishlist</button>
                             </div>
 
                         </div>
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
