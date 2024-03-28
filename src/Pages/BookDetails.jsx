@@ -28,9 +28,9 @@ const BookDetails = () => {
 
 
     return (
-        <div className="card lg:card-side bg-base-100 shadow-xl gap-6 px-8 mt-20">
+        <div className="card lg:card-side bg-base-100 shadow-xl gap-6 px-8 mt-10">
             <div className="lg:w-6/12 ">
-                <figure><img className="w-full h-[650px] bg-cover bg-no-repeat" src={image} alt="Album" /></figure>
+                <figure><img className="w-full h-[650px] bg-cover bg-no-repeat rounded-3xl" src={image} alt="Album" /></figure>
             </div>
 
             <div className=" lg:w-6/12">
@@ -57,7 +57,7 @@ const BookDetails = () => {
                             }
 
                         </div>
-                        <div className="space-y-6">
+                        <div className="space-y-5">
                             <hr className=" border-t border-dashed border-gray-400" />
                             <h4 className="text-lg font-semibold">Related posts</h4>
                             <p>Number of page : {totalPages}</p>
@@ -65,8 +65,8 @@ const BookDetails = () => {
                             <p>Year of publishing : {yearOfPublishing}</p>
                             <p>Rating :{rating}</p>
                             <div className="space-x-5">
-                                <button onClick={handleReadBook} className="btn">Read </button>
-                                <button onClick={saveWishlist} className="btn text-green-400">Wishlist</button>
+                                <button onClick={handleReadBook} className="btn text-black">Read </button>
+                                <button onClick={saveWishlist} className="btn bg-sky-500 text-white">Wishlist</button>
                             </div>
 
                         </div>

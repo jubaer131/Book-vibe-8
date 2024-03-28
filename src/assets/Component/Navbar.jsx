@@ -6,26 +6,26 @@ const Navbar = () => {
     const links = <>
 
         <NavLink
-            to='/' className={({ isActive }) => isActive ? 'text-[18px] text-green-500 font-bold' : 'text-[18px] font-bold'}>
+            to='/' className={({ isActive }) => isActive ? 'text-[18px] text-green-500 font-bold btn border-green-500' : 'text-[18px] font-bold btn border-green-500'}>
             Home
         </NavLink>
 
 
         <NavLink
-            to='/books' className={({ isActive }) => isActive ? 'text-[18px] text-green-500 font-bold' : 'text-[18px] font-bold'} >
+            to='/books' className={({ isActive }) => isActive ? 'text-[18px] text-green-500 font-bold btn border-green-500' : 'text-[18px] font-bold btn border-green-500'} >
             Listed Books
         </NavLink>
 
 
         <NavLink
-            to='/pages' className={({ isActive }) => isActive ? 'text-[18px] text-green-500 font-bold' : 'text-[18px] font-bold'} >
+            to='/pages' className={({ isActive }) => isActive ? 'text-[18px] text-green-500 font-bold btn border-green-500' : 'text-[18px] font-bold btn border-green-500'} >
             Pages To Read
         </NavLink>
 
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 lg:mb-10 mt-7">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl lg:text-2xl font-bold">Career Hub</a>
+                <a className="btn btn-ghost normal-case text-sm lg:text-3xl font-bold">Book vive</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1   lg:gap-6">
@@ -43,8 +43,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-2 lg:gap-4">
-                <a className="btn bg-green-500 text-white">Sign in </a>
-                <a className="btn">Sign Up </a>
+                <button className="btn bg-green-500 text-white  text-[10px] lg:text-[18px] "> Sign in</button>
+
+                <button className="bg-sky-500 btn text-[10px] lg:text-[18px] text-white"> Sign up</button>
             </div>
         </div>
     );

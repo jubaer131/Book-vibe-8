@@ -4,7 +4,7 @@ import Blogs from "../assets/Component/Blogs";
 
 const Home = () => {
     return (
-        <div>
+        <div className="container mb-10">
             <Banner></Banner>
             <Blogs></Blogs>
         </div>
